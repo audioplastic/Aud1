@@ -1,4 +1,4 @@
 Aud1
 ====
 
-Aud1 site
+This it the github repo containing the Aud1 website.
