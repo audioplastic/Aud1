@@ -95,13 +95,20 @@ table {
   border-spacing: 0;
   width: 100%;
   margin: 0.3em 0 0.3em 0;
+  
+  /* Nick added */
+  /*background-color: #000000;
+  color: #D0D0D0;
+  font-family: "Helvetica Neue", "DejaVu Sans", "Verdana", sans-serif;
+  text-align: center;*/
+  line-height: 150%;
 }
 
 th, td {
   padding: 0.3em 0.5em 0.3em 0.5em;
-  border-bottom: 1px solid #D8D8D8;
-  vertical-align: top;
-  background-color: #FFFFFF;
+  /*border-bottom: 1px solid #D8D8D8;*/
+  vertical-align: center;
+  /*background-color: #FFFFFF;*/
 }
 
 th, thead td {
