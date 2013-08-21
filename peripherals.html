@@ -4,7 +4,7 @@
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-    <title>Aud1 &mdash; Basic Navigation</title>
+    <title>Aud1 &mdash; Audio Connectivity</title>
     <style type='text/css'>
       @import 'css/default.css';
       @import 'css/syntax.css';
@@ -77,45 +77,38 @@
 		
       </div>
       <div id='content'>
-        <h1 id='Liquid error: wrong number of arguments (1 for 2)'>Basic Navigation</h1>
-        <ol class="toc"></ol>
-        <p>Aud1 is comprised of various pages of user adjustable settings that can be navigated by tapping one of the 5 icons visible in the navigation bar on the left-side of the screen.</p>
-<table style="border:1px solid white;">
-	<tr>
-		<td> <img src="images/NavIcons/Folder.png" alt="" /> </td>
-		<td> Tapping the folder icon will reveal controls allowing the user to shape the sound processing to their needs. <hr> </td>
-	</tr>
-	<tr>
-		<td> <img src="images/NavIcons/Tools.png" alt="" />  </td>
-		<td> Tapping the tools icon will reveal controls allowing the user to adjust the global function of the sound processing in the app. <hr> </td>
-	</tr>
-	<tr>
-		<td> <img src="images/NavIcons/Clock.png" alt="" /> </td>
-		<td> Tapping the clock icon will reveal information screens showing usage statistics and logs. <hr> </td>
-	</tr>
-	<tr>
-		<td> <img src="images/NavIcons/License.png" alt="" /> </td>
-		<td> Tapping the certificate icon will reveal a screen showing information about the app, including current <span class="caps">CPU</span> usage.<hr>  </td>
-	</tr>
-	<tr>
-		<td> <img src="images/NavIcons/Radio-Tower.png" alt="" /> </td>
-		<td> Tapping the radio-tower icon will open this website in the default browser. </td>
-	</tr>
-</table>
-<p>Tapping the main navigation icons reveals sub-pages which each have a descriptive header like that shown below. The header shown has a title, and dots to indicate the position of the visible page within the group. Tappable arrows appear allowing the user to navigate between various pages within the group. Pages can also be navigated using horizontal swipe gestures within the main page area.</p>
+        <h1 id='Liquid error: wrong number of arguments (1 for 2)'>Audio Connectivity</h1>
+        <ol class="toc"><li><a href="#cans">Headphones advice</a></li><li><a href="#stereo">Stereo input peripherals</a></li><li><a href="#blue">Bluetooth</a></li></ol>
+        <h2 id="cans">Headphones advice</h2>
+<p>Connect the headphones to the device then use either the hardware volume buttons on the side of the device, or the software volume control in the app to adjust the headphone volume. Hint: For best results, use headphones with a good seal, preferably with an occluded fitting (i.e. blocks the ear canal).</p>
 <table>
 	<tr>
-		<td> <img src="images/NavIcons/navhead.png" alt="" /> </td>
+		<td> <img src="images/cans/closed.jpeg" alt="" /> </td>
+		<td> Headphones the form an acoustic seal in the ear canal allow Aud1 to protect the user from loud sounds. </td>
+	</tr>
+	<tr>
+		<td> <img src="images/cans/open.jpeg" alt="" /> </td>
+		<td> Headphones that do not form an acoustic seal cannot protect the wearer from loud sounds, but will still allow amplification of quiet sounds. </td>
 	</tr>
 </table>
-<hr>
-<p>Aud1 supports use in both horizontal and vertical device orientations, allowing the user to choose whichever is more comfortable.</p>
+<h2 id="stereo">Stereo input peripherals</h2>
+<p>Aud1&#8217;s real potential can be unlocked when it is used in conjunction with a stereo input device. This gives the listener a sense of space within the environment in which they listen, as well as providing all of the benefits associated with binaural listening. Aud1 features a stereo linkage technology that is enabled in the background when a stereo input device is used. This linkage technology modulates the action of the compressors within each band to preserve spatial cues.</p>
+<p>Aud1 is compatible with any stereo input device designed for iOS. These devices come in 2 main forms:</p>
 <table>
 	<tr>
-		<td><img src="images/screenshot/3p5/calib.png" style="width: 200px;" alt="" /></td>
-		<td><img src="images/screenshot/3p5/log.png" style="width: 400px;" alt="" /></td>
+		<td> <img src="images/peripherals/iM2.jpeg" alt="" /> </td>
+		<td> Devices with built-in microphones. </td>
+	</tr>
+	<tr>
+		<td> <img src="images/peripherals/iXJ2.jpeg" alt="" /> </td>
+		<td> Devices allowing connection of external stereo microphones. </td>
 	</tr>
 </table>
+<p>The best possible hardware combination is still an open research question, so please don&#8217;t hesitate to contact <a href="about.html">Nick Clark</a> describing any experiences with various hardware combinations.</p>
+<h2 id="blue">Bluetooth</h2>
+<p>Bluetooth support was one of the most requested features for the original BioAid app. Therefore, as a result of popular demand, I have added basic bluetooth support to Aud1. <b><span class="caps">HOWEVER</span></b>!!! Bluetooth headset technology is designed for telephony, and is not designed for fast real-time full-duplex operation. When using a headset designed for telephony with Aud1, a processing delay is introduced, which is not a problem when conducting a telephone conversation, as the other person will be remote. Furthermore, the audio bandwidth is severely reduced, which again is not a problem over a low frequency-bandwidth voice call line. Unfortunately, these Bluetooth limitations are clearly noticeable when using the app, and generally impede any benefit that would otherwise be given to the listener by the app. Still, I have included the ability for the user to experiment with his or her own hardware. Feedback from the original BioAid project revealed some novel uses of the app which I had not foreseen, so Bluetooth support is included for experimentation purposes in Aud1. Please try it out if you currently own Bluetooth hardware, but I would not recommend purchasing any Bluetooth hardware specifically for use with Aud1. I kindly request that you do not review the software poorly online due to Bluetooth technology limitations that are out of my control. However please don&#8217;t hesitate to contact <a href="about.html">Nick Clark</a> personally regarding any successes or failures with your Bluetooth devices.</p>
+<p>To use a Bluetooth enabled device in Aud1, first pair your devices and then open Aud1. When Aud1 is in its paused state, you should be presented with an audio route control icon in the bottom right corner of the app screen. Tap this and you&#8217;ll be able to select your audio peripherals.</p>
+<p><img src="images/screenshot/3p5/route.png" alt="" /></p>
       </div>
 	  
 	  
