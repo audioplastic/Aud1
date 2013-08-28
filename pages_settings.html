@@ -4,7 +4,7 @@
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-	<meta name=”description” content=”Documentation website for the Aud1 assistive listening - hearing app”/>
+	<meta name=”description” content=”Documentation website for the Aud1 assistive listening hearing app”/>
     <title>Aud1 &mdash; Settings</title>
     <style type='text/css'>
       @import 'css/default.css';
@@ -80,19 +80,29 @@
       <div id='content'>
         <h1 id='Liquid error: wrong number of arguments (1 for 2)'>Settings</h1>
         <ol class="toc"><li><a href="#dev">Device Settings</a></li><li><a href="#cal">Calibration</a></li></ol>
-        <p>Detailed help coming soon . .</p>
+        <p>The advanced settings in Aud1 are included for users who want the control to get the best possible experience from the app.</p>
 <h2 id="dev">Device Settings</h2>
 <table>
 	<tr>
 		<td><img src="images/screenshot/4/3.png" alt="" /></td>
+		<td> The device settings page (shown left) is the first page that the user will see when selecting the tools icon from the navigation bar. The tools icon in the navigation bar is illuminated when this page is visible, and the user can return to this page at any time by tapping the tools icon. The page consists of 3 main controls (1) Audio buffer samples which controls the latency (delay) introduced by the app at the expense of <span class="caps">CPU</span> load (2) Active stereo channels which controls whether or not the app should work in full stereo (3) Reset button, which will restore all user adjustable values back to the factory defaults </td>
 	</tr>
 </table>
+<h3 id="samples">Audio buffer samples</h3>
+<p>This is the <a href="http://en.wikipedia.org/wiki/Data_buffer">number of samples</a> that the app will process before sending the processed sample data to the output. The default setting of 128 will be suitable for most devices, but if you&#8217;re experiencing clicks or pops when listening to Aud1 using an older less powerful iOS device, you may need to increase the sample buffer size. This will fractionally increase the delay between the input and output sounds, but only by an undetectable amount to most listeners. Conversely, if you are using an iPhone 5, you can set this value to 64 samples and enjoy the lowest latency possible. Some devices are capable at running using 64 sample buffers when the active stereo channels setting (see below) is set to 1. Experiment and see how low a setting you can use before the audio breaks up.</p>
+<p>Using the default setting of 128 samples matches or exceeds the round-trip latency of all other assistive listening iOS apps.</p>
+<h3 id="stereo">Active stereo channels</h3>
+<p>This setting can be used to either enable or disable the full stereo processing capabilities of the app. By default, full stereo processing capability is enabled (Active stereo channels has a value of 2). However, if you find that you are using the same settings for each ear (all chain-link icons illuminated in the <a href="pages_folder.html">folder page</a>), and you are not using stere input hardware, then there are advantages to switching the app into single stereo channel mode. These include (1) a reduced <span class="caps">CPU</span> load which may result in a longer battery life when Aud1 is active, and (2) the potential for using a lower number of audio buffer samples to minimize latency on certain devices.</p>
+<p><span class="caps">NOTE</span>: Do not set active stereo channels to 1 when using stereo input hardware, even if you are using identical settings for left and right ears, as you will loose any benefits of binaural listening that would otherwise be given by the stereo input.</p>
+<h3 id="restore">Restore all settings</h3>
+<p>This will erase any settings made and will restore the software to its factory defaults. Logging and timer information will be retained, but this data can be cleared from the <a href="pages_logs.html">log pages</a>.</p>
 <h2 id="cal">Calibration</h2>
 <table>
 	<tr>
 		<td><img src="images/screenshot/3p5/calib.png" alt="" /></td>
-	</tr>
+		<td> The calibration page (shown left) can be found to the right of the device settings page. This page contains controls and information related to the software input and output gain. </td>
 </table>
+<p>Detailed information coming soon . .</p>
       </div>
 	  
 	  

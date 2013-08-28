@@ -4,7 +4,7 @@
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-	<meta name=”description” content=”Documentation website for the Aud1 assistive listening - hearing app”/>
+	<meta name=”description” content=”Documentation website for the Aud1 assistive listening hearing app”/>
     <title>Aud1 &mdash; Preset Selection and Tuning</title>
     <style type='text/css'>
       @import 'css/default.css';
@@ -79,13 +79,43 @@
       </div>
       <div id='content'>
         <h1 id='Liquid error: wrong number of arguments (1 for 2)'>Preset Selection and Tuning</h1>
-        <ol class="toc"></ol>
-        <p>Detailed help coming soon . .</p>
+        <ol class="toc"><li><a href="#ovr">Overview</a></li><li><a href="#cat">Category Selector</a></li><li><a href="#focus">Dynamic-range focus</a></li><li><a href="#gate">Noise gate</a></li></ol>
+        <h2 id="ovr">Overview</h2>
 <table>
 	<tr>
 		<td><img src="images/screenshot/3p5/Aud1_main.png" alt="" /></td>
+		<td> The preset selection page (shown left) is the first page that the user is greeted with when launching the app. The folder icon in the navigation bar is illuminated when this page is visible, and the user can return to this page at any time by tapping the folder icon. The page consists of 3 main controls (1) the Category selector allows the user to select the frequency profile of the amplification (2) The Dynamic-range focus control allows the user to adjust how compressed the sound is (3) The Noise gate control sets the threshold of the noise reduction preprocessing.  </td>
 	</tr>
 </table>
+<p>Notice that the header above the main page initially says &#8220;Left&#8221;. Aud1 is uses independent audio processors for left and right ears by default (although this setting can be modified as discussed <a href="pages_settings.html">here</a>). Settings can be changed independently for the left and right ears if desired. The settings page for the other ear can be accessed by horizontally swiping left or right in the main content area.</p>
+<p>Adjacent to each of the the main controls is a chain-link icon. These are illuminated by default to indicate that any modified settings will affect both ears. The linkage can be enabled or disabled for any setting by tapping the chain-link icon. However, it is recommended that users leave the settings linked when exploring initially to get a feel for the way the app reacts to manipulations of the different controls. If you have different levels of hearing loss in each ear, you may find it easier to explore the parameters by wearing only one earpiece at a time to tune the values for each ear, then perhaps wearing both earpieces while fine tuning the settings.</p>
+<h2 id="cat">Category Selector</h2>
+<p>The Category selector allows the user to select the frequency profile of the amplification. The choices include:</p>
+<ul>
+	<li>A flat boost that is equal across all frequencies.</li>
+	<li>A gentle or steeply sloping high frequency boost relative to lower frequencies.</li>
+	<li>One of a selection of mid frequency boost profiles, suitable for those with a mid-frequency notch in their hearing, commonly referred to as a &#8220;cookie bite&#8221; audiogram.</li>
+</ul>
+<p>During the process of researching the BioAid algorithm, we found that the best settings for users clustered around these main amplification profiles. The user is invited to try all of the various settings to see which works best for them. It is important to have a constant sound stimulus during the process of exploration. We have found talk radio to be a particularly effective stimulus, although any continuous speech source would work well.</p>
+<h2 id="focus">Dynamic-range focus</h2>
+<p>After selecting the preferred amplification profile from the category selector, the user should begin to experiment with the Dynamic-range focus control knob. his is a powerful control that sets how compressive the processing is. In the background, this control is actually responsible for adjusting up to 30 parameters in the core algorithm simultaneously.</p>
+<table style="border:1px solid white;">
+	<tr>
+		<td><img src="images/widgets/rotary.png" alt="" /></td>
+		<td> <h4>Note:</h4>Throughout the app, sliders are available to make fine-grained adjustments to various settings. To use these sliders, tap the centre of the widget, and then drag your finger in the vertical plane to adjust the value. Dragging upwards increases the value, while dragging downwards decreases the value. </td>
+	</tr>
+</table>
+<p>Low values of focus provide a wide soundscape, where there is a lot of contrast between quiet and loud sounds. Lower settings are recommended for users with milder hearing losses. High values of focus make the processed sound heavily compressed, providing a smaller difference between quiet and loud sounds. Higher values of focus are recommended for most users with more moderate forms of hearing loss. This control should be adjusted in conjunction with the master volume control (the master volume can be adjusted using the slider at the bottom of the screen, or by using the hardware volume controls on the side of the physical device). Try low values of focus with high master volume for the widest dynamic range, or a high value of focus with a slightly reduced master volume for a more compressed, but not overly loud setting. Push both these controls to the maximum for the highest output level.</p>
+<p>If the output is still to quiet with both master volume and dynamic focus set to their maximum values, you may be able to squeeze a few more decibels of output from the device by altering the advanced &#8220;output gain&#8221; control discussed in the calibration section of <a href="pages_settings.html">this page</a>.</p>
+<p>Users of the original BioAid app can find settings similar to their preferred preset by first setting the main category drop down menu to the title of their preferred amplification profile, then adjusting the Dynamic-range focus to either 0, 33, 66, or 100%. A setting of 0% is equivalent to the widest dynamic range setting in the original BioAid app, while a setting of 100% is equivalent to the narrowest. The intermediate percentages correspond to the intermediate settings in the original BioAid app. The finer grained control in Aud1 allows the user to explore the space between the original presets.</p>
+<h2 id="gate">Noise gate</h2>
+<table style="border:1px solid white;">
+	<tr>
+		<td><img src="images/widgets/rotary.png" alt="" /></td>
+		<td> <h4>Note:</h4>Throughout the app, sliders are available to make fine-grained adjustments to various settings. To use these sliders, tap the centre of the widget, and then drag your finger in the vertical plane to adjust the value. Dragging upwards increases the value, while dragging downwards decreases the value. </td>
+	</tr>
+</table>
+<p>The noise gate control allows the user to set how sensitive the processing is to background noise. This is only intended for use when listening in quiet. The gate can reduce audible hiss at the expense of losing sensitivity to very low level sounds. The gate setting has no effect when listening in noisy environments. Experiment with the gate threshold setting when navigating the various presets to add additional listening comfort.</p>
       </div>
 	  
 	  
